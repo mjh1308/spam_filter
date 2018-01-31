@@ -26,23 +26,22 @@ tokens have the highest spam and ham indication values. This repository consists
 
 4. Execute the import statement: ```import nb_classifier as nb```
 
-5. To create and train the classifier, enter the command: 
-
+5. To create and train the classifier, enter the command: <br />
 ```model = nb.SpamFilter("datasets/train/spam", "datasets/train/ham", 1e-5)```
 
 6. After processing the training dataset, the model can be tested against unseen emails in the "test" subfolder
 
-7. Pass the path to the desired input text file to the function is_spam() as shown below, which will return "True" if it is classified as spam and return "False" otherwise
-```# Passing test input file "dev1"```
-```model.is_spam("datasets/test/ham/dev1")```
-```# Passing test input file "dev201"```
+7. Pass the path to the desired input text file to the function is_spam() as shown below, which will return "True" if it is classified as spam and return "False" otherwise <br />
+```# Passing test input file "dev1"``` <br />
+```model.is_spam("datasets/test/ham/dev1")``` <br />
+```# Passing test input file "dev201"``` <br />
 ```model.is_spam("datasets/test/spam/dev201")```
 
-8. To determine the n most indicative words for each class in the "model" classifier, run the following commands: 
-```# Lists the 5 words that have the highest spam indicator```
-```model.most_indicative_spam(5)``` 
-```# Lists the 3 words that have the highest ham indicator```
-```model.most_indicative_ham(3)``` 
+8. To determine the n most indicative words for each class in the "model" classifier, run the following commands: <br />
+```# Lists the 5 words that have the highest spam indicator``` <br />
+```model.most_indicative_spam(5)``` <br />
+```# Lists the 3 words that have the highest ham indicator``` <br />
+```model.most_indicative_ham(3)``` <br />
 
 
 ### How to Run the "test1_script.py" Test Script:
