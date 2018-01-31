@@ -18,7 +18,8 @@ tokens have the highest spam and ham indication values.
 2. Start a new terminal session and access the directory that the repository is saved in
 3. Start the program by entering the command: ```python nb_classifier.py``` then ```python``` to access the Python console
 4. Execute the import statement: ```import nb_classifier as nb```
-5. To create and train the classifier, enter the command: ```model = nb.SpamFilter("datasets/train/spam", "datasets/train/ham", 1e-5)```
+5. To create and train the classifier, enter the command: 
+```model = nb.SpamFilter("datasets/train/spam", "datasets/train/ham", 1e-5)```
 6. After processing the training dataset, the model can be tested against unseen emails in the "test" subfolder
 7. The function is_spam() below will return "True" if it is classified as spam and return "False" otherwise
 ```model.is_spam("datasets/test/ham/dev1")  # Running model against test input file "dev1"```
