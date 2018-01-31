@@ -20,7 +20,7 @@ tokens have the highest spam and ham indication values. This repository consists
 ### How to Run the "nb_classifier.py" Program: 
 1. Download this repository onto your local machine
 
-2. Start a new terminal session and access the directory that the repository is saved in **(make sure all files and folders listed above are in this same directory)**
+2. Start a new terminal session and access the directory that the repository is saved in **(MAKE SURE ALL FILES AND FOLDERS LISTED ABOVE ARE IN THIS SAME DIRECTORY)**
 
 3. Start the program by entering the command: ```python nb_classifier.py``` then ```python``` to access the Python console
 
@@ -32,13 +32,17 @@ tokens have the highest spam and ham indication values. This repository consists
 
 6. After processing the training dataset, the model can be tested against unseen emails in the "test" subfolder
 
-7. The function is_spam() below will return "True" if it is classified as spam and return "False" otherwise
- ```model.is_spam("datasets/test/ham/dev1")  # Running model against test input file "dev1"```
- ```model.is_spam("datasets/test/spam/dev201")  # Running model against test input file "dev201" ```
+7. Pass the path to the desired input text file to the function is_spam() as shown below, which will return "True" if it is classified as spam and return "False" otherwise
+```# Passing test input file "dev1"```
+```model.is_spam("datasets/test/ham/dev1")```
+```# Passing test input file "dev201"```
+```model.is_spam("datasets/test/spam/dev201")```
 
 8. To determine the n most indicative words for each class in the "model" classifier, run the following commands: 
-```model.most_indicative_spam(5)  # Lists the 5 words that have the highest spam indicator``` 
-```model.most_indicative_ham(5)  # Lists the 3 words that have the highest ham indicator``` 
+```# Lists the 5 words that have the highest spam indicator```
+```model.most_indicative_spam(5)``` 
+```# Lists the 3 words that have the highest ham indicator```
+```model.most_indicative_ham(3)``` 
 
 
 ### How to Run the "test1_script.py" Test Script:
