@@ -11,7 +11,10 @@ exist in the training set as well as the conditional probabilities mapped to eac
 encountered in the emails. By using these calculated probabilities from the training dataset as a benchmark, the model is 
 then able to read in a new unprocessed email and make an informed decision of predicting if it is spam or not spam. This 
 model can also list down the most indicative spam and ham words based on the dataset it was trained with to see which 
-tokens have the highest spam and ham indication values. 
+tokens have the highest spam and ham indication values. This repository consists of: 
+- **nb_classifier.py**: Main program that defines the class and functions that parse the input text file, creates and trains the model, tests for spam or otherwise, list down indicative words, and so forth. 
+- **test1_script.py**: Executable script that passes the inputs to the main program and tests the trained model
+- **datasets**: Folder that contains the training set and test set of emails/text files to pass as input to the classifier
 
 
 ### How to Run the "nb_classifier.py" Program: 
