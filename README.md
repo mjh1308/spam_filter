@@ -33,13 +33,13 @@ tokens have the highest spam and ham indication values. This repository consists
 
 7. Pass the path to the desired input text file to the function is_spam() as shown below, which will return "True" if it is classified as spam and return "False" otherwise <br />
 ```# Passing test input file "dev1"``` <br />
-```model.is_spam("datasets/test/ham/dev1")``` <br />
+```model.is_spam("datasets/test/ham/dev1")``` <br /> <br />
 ```# Passing test input file "dev201"``` <br />
 ```model.is_spam("datasets/test/spam/dev201")```
 
 8. To determine the n most indicative words for each class in the "model" classifier, run the following commands: <br />
 ```# Lists the 5 words that have the highest spam indicator``` <br />
-```model.most_indicative_spam(5)``` <br />
+```model.most_indicative_spam(5)``` <br /> <br />
 ```# Lists the 3 words that have the highest ham indicator``` <br />
 ```model.most_indicative_ham(3)``` <br />
 
