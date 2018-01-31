@@ -17,13 +17,14 @@ tokens have the highest spam and ham indication values.
 ### How to Run the "nb_classifier.py" Program: 
 1. Download this repository onto your local machine
 
-2. Start a new terminal session and access the directory that the repository is saved in
+2. Start a new terminal session and access the directory that the repository is saved in **(make sure all files and folders listed above are in this same directory)**
 
 3. Start the program by entering the command: ```python nb_classifier.py``` then ```python``` to access the Python console
 
 4. Execute the import statement: ```import nb_classifier as nb```
 
 5. To create and train the classifier, enter the command: 
+
 ```model = nb.SpamFilter("datasets/train/spam", "datasets/train/ham", 1e-5)```
 
 6. After processing the training dataset, the model can be tested against unseen emails in the "test" subfolder
